@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		77D49C63251012A400C9C1F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D49C62251012A400C9C1F7 /* AppDelegate.swift */; };
-		77D49C65251012A400C9C1F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D49C64251012A400C9C1F7 /* SceneDelegate.swift */; };
-		77D49C67251012A400C9C1F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D49C66251012A400C9C1F7 /* ViewController.swift */; };
+		77D49C67251012A400C9C1F7 /* VideoCompositionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D49C66251012A400C9C1F7 /* VideoCompositionController.swift */; };
 		77D49C6A251012A400C9C1F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D49C68251012A400C9C1F7 /* Main.storyboard */; };
 		77D49C6C251012A600C9C1F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D49C6B251012A600C9C1F7 /* Assets.xcassets */; };
 		77D49C6F251012A600C9C1F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D49C6D251012A600C9C1F7 /* LaunchScreen.storyboard */; };
+		77D49C78251012CB00C9C1F7 /* MediaPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D49C77251012CB00C9C1F7 /* MediaPickerController.swift */; };
+		77D49C802510E68400C9C1F7 /* VideoComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D49C7F2510E68400C9C1F7 /* VideoComposer.swift */; };
+		77D49C83251154EB00C9C1F7 /* MediaItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D49C82251154EB00C9C1F7 /* MediaItemCell.swift */; };
+		77D49C852511586A00C9C1F7 /* VideoCompositionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D49C842511586A00C9C1F7 /* VideoCompositionViewModel.swift */; };
+		77D49C882511624E00C9C1F7 /* AVFoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D49C872511624E00C9C1F7 /* AVFoundationExtensions.swift */; };
+		77D49C8A2511645C00C9C1F7 /* PiPVideoComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D49C892511645C00C9C1F7 /* PiPVideoComposer.swift */; };
+		77D49C932511EF9E00C9C1F7 /* CGSizeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D49C922511EF9E00C9C1F7 /* CGSizeExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		77D49C5F251012A400C9C1F7 /* AVFoundationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D49C62251012A400C9C1F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		77D49C64251012A400C9C1F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		77D49C66251012A400C9C1F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		77D49C66251012A400C9C1F7 /* VideoCompositionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCompositionController.swift; sourceTree = "<group>"; };
 		77D49C69251012A400C9C1F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77D49C6B251012A600C9C1F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77D49C6E251012A600C9C1F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77D49C70251012A600C9C1F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D49C77251012CB00C9C1F7 /* MediaPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerController.swift; sourceTree = "<group>"; };
+		77D49C7F2510E68400C9C1F7 /* VideoComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoComposer.swift; sourceTree = "<group>"; };
+		77D49C82251154EB00C9C1F7 /* MediaItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemCell.swift; sourceTree = "<group>"; };
+		77D49C842511586A00C9C1F7 /* VideoCompositionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCompositionViewModel.swift; sourceTree = "<group>"; };
+		77D49C872511624E00C9C1F7 /* AVFoundationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVFoundationExtensions.swift; sourceTree = "<group>"; };
+		77D49C892511645C00C9C1F7 /* PiPVideoComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiPVideoComposer.swift; sourceTree = "<group>"; };
+		77D49C922511EF9E00C9C1F7 /* CGSizeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,77 @@
 		77D49C61251012A400C9C1F7 /* AVFoundationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				77D49C62251012A400C9C1F7 /* AppDelegate.swift */,
-				77D49C64251012A400C9C1F7 /* SceneDelegate.swift */,
-				77D49C66251012A400C9C1F7 /* ViewController.swift */,
-				77D49C68251012A400C9C1F7 /* Main.storyboard */,
-				77D49C6B251012A600C9C1F7 /* Assets.xcassets */,
-				77D49C6D251012A600C9C1F7 /* LaunchScreen.storyboard */,
+				77D49C8C25116D4200C9C1F7 /* Common */,
+				77D49C8B25116D0D00C9C1F7 /* Modules */,
+				77D49C792510B94200C9C1F7 /* Resources */,
 				77D49C70251012A600C9C1F7 /* Info.plist */,
 			);
 			path = AVFoundationDemo;
+			sourceTree = "<group>";
+		};
+		77D49C76251012B000C9C1F7 /* Media picker */ = {
+			isa = PBXGroup;
+			children = (
+				77D49C77251012CB00C9C1F7 /* MediaPickerController.swift */,
+			);
+			path = "Media picker";
+			sourceTree = "<group>";
+		};
+		77D49C792510B94200C9C1F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77D49C68251012A400C9C1F7 /* Main.storyboard */,
+				77D49C6D251012A600C9C1F7 /* LaunchScreen.storyboard */,
+				77D49C6B251012A600C9C1F7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		77D49C7E2510E66400C9C1F7 /* Media editor */ = {
+			isa = PBXGroup;
+			children = (
+				77D49C66251012A400C9C1F7 /* VideoCompositionController.swift */,
+				77D49C842511586A00C9C1F7 /* VideoCompositionViewModel.swift */,
+				77D49C82251154EB00C9C1F7 /* MediaItemCell.swift */,
+			);
+			path = "Media editor";
+			sourceTree = "<group>";
+		};
+		77D49C862511623300C9C1F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77D49C872511624E00C9C1F7 /* AVFoundationExtensions.swift */,
+				77D49C922511EF9E00C9C1F7 /* CGSizeExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		77D49C8B25116D0D00C9C1F7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				77D49C76251012B000C9C1F7 /* Media picker */,
+				77D49C7E2510E66400C9C1F7 /* Media editor */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		77D49C8C25116D4200C9C1F7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				77D49C62251012A400C9C1F7 /* AppDelegate.swift */,
+				77D49C862511623300C9C1F7 /* Extensions */,
+				77D49C8D25116D4A00C9C1F7 /* Services */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		77D49C8D25116D4A00C9C1F7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				77D49C7F2510E68400C9C1F7 /* VideoComposer.swift */,
+				77D49C892511645C00C9C1F7 /* PiPVideoComposer.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +212,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77D49C67251012A400C9C1F7 /* ViewController.swift in Sources */,
+				77D49C932511EF9E00C9C1F7 /* CGSizeExtensions.swift in Sources */,
+				77D49C83251154EB00C9C1F7 /* MediaItemCell.swift in Sources */,
+				77D49C8A2511645C00C9C1F7 /* PiPVideoComposer.swift in Sources */,
+				77D49C882511624E00C9C1F7 /* AVFoundationExtensions.swift in Sources */,
+				77D49C78251012CB00C9C1F7 /* MediaPickerController.swift in Sources */,
+				77D49C67251012A400C9C1F7 /* VideoCompositionController.swift in Sources */,
+				77D49C852511586A00C9C1F7 /* VideoCompositionViewModel.swift in Sources */,
+				77D49C802510E68400C9C1F7 /* VideoComposer.swift in Sources */,
 				77D49C63251012A400C9C1F7 /* AppDelegate.swift in Sources */,
-				77D49C65251012A400C9C1F7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -285,6 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K2Z2624US;
 				INFOPLIST_FILE = AVFoundationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8K2Z2624US;
 				INFOPLIST_FILE = AVFoundationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
