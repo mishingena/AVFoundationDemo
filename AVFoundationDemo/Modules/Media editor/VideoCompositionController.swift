@@ -23,13 +23,6 @@ class VideoCompositionController: UIViewController {
                                    action: #selector(addButtonAction(_:)))
         return item
     }()
-    private lazy var pipVideoButton: UIBarButtonItem = {
-        let item = UIBarButtonItem(title: "Make PiP",
-                                   style: .done,
-                                   target: self,
-                                   action: #selector(pipButtonAction(_:)))
-        return item
-    }()
     private lazy var clearButton: UIBarButtonItem = {
         let item = UIBarButtonItem(barButtonSystemItem: .trash,
                                    target: self,
@@ -72,7 +65,6 @@ class VideoCompositionController: UIViewController {
         
         exportButton.isEnabled = false
         navigationItem.rightBarButtonItem = exportButton
-        navigationItem.leftBarButtonItem = pipVideoButton
         
         view.addSubview(tableView)
         
@@ -86,7 +78,6 @@ class VideoCompositionController: UIViewController {
     
     private func updateUI(reloadTable: Bool = true) {
         exportButton.isEnabled = viewModel.mediaURLs.count > 1
-        pipVideoButton.isEnabled = viewModel.mediaURLs.count == 2
         if reloadTable {
             tableView.reloadData()
         }
@@ -141,17 +132,6 @@ class VideoCompositionController: UIViewController {
         present(ac, animated: true, completion: nil)
     }
     
-    @objc private func pipButtonAction(_ sender: UIBarButtonItem) {
-        checkAccessToPhotos { [weak self] in
-            guard let self = self else { return }
-            self.activityIndicator.startAnimating()
-            self.viewModel.exportPiPVideo { [weak self] (result) in
-                guard let self = self else { return }
-                self.handleExportResult(result)
-            }
-        }
-    }
-    
     @objc private func exportButtonAction(_ sender: UIBarButtonItem) {
         checkAccessToPhotos { [weak self] in
             guard let self = self else { return }
@@ -170,14 +150,15 @@ class VideoCompositionController: UIViewController {
                 let ac = UIAlertController(title: "Photo library access denied",
                                            message: "Allow access in Settings",
                                            preferredStyle: .alert)
-                guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else { return }
+                if let settingsUrl = URL(string: UIApplication.openSettingsURLString) {
+                    let settingsAction = UIAlertAction(title: "Settings", style: .default, handler: { _ in
+                        if UIApplication.shared.canOpenURL(settingsUrl) {
+                            UIApplication.shared.open(settingsUrl, completionHandler: nil)
+                        }
+                    })
+                    ac.addAction(settingsAction)
+                }
 
-                let settingsAction = UIAlertAction(title: "Settings", style: .default, handler: { _ in
-                    if UIApplication.shared.canOpenURL(settingsUrl) {
-                        UIApplication.shared.open(settingsUrl, completionHandler: nil)
-                    }
-                })
-                ac.addAction(settingsAction)
                 ac.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
                 self.present(ac, animated: true, completion: nil)
                 return

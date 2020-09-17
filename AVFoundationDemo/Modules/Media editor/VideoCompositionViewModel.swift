@@ -20,24 +20,13 @@ class VideoCompositionViewModel {
     
     var mediaURLs: [URL] = []
     
-    func exportPiPVideo(completion: ((Swift.Result<URL, Error>) -> Void)?) {
-        guard mediaURLs.count == 2, let mainURL = mediaURLs.first, let pictureURL = mediaURLs.last else { return }
-        
-        let composer = PiPVideoComposer()
-        composer.composeMediaItems(mainVideoURL: mainURL, pictureVideoURL: pictureURL, keepAudio: true)
-        
-        export(composition: composer.composition, videoComposition: composer.videoComposition) { (url) in
-            if let url = url {
-                completion?(.success(url))
-            } else {
-                completion?(.failure(Constants.unknownError))
-            }
-        }
-    }
-    
     func exportVideo(completion: ((Swift.Result<URL, Error>) -> Void)?) {
+        guard mediaURLs.count > 1 else { return }
+        
         let composer = VideoComposer()
-        composer.composeMediaItemsWithFadeTransition(urls: mediaURLs, keepAudio: true)
+        var urls = mediaURLs
+        let pipURL = urls.removeLast()
+        composer.composeMediaItemsWithFadeTransition(urls: urls, pipURL: pipURL)
         if let error = composer.error {
             completion?(.failure(error))
             return

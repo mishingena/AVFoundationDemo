@@ -17,7 +17,6 @@
 		77D49C83251154EB00C9C1F7 /* MediaItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D49C82251154EB00C9C1F7 /* MediaItemCell.swift */; };
 		77D49C852511586A00C9C1F7 /* VideoCompositionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D49C842511586A00C9C1F7 /* VideoCompositionViewModel.swift */; };
 		77D49C882511624E00C9C1F7 /* AVFoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D49C872511624E00C9C1F7 /* AVFoundationExtensions.swift */; };
-		77D49C8A2511645C00C9C1F7 /* PiPVideoComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D49C892511645C00C9C1F7 /* PiPVideoComposer.swift */; };
 		77D49C932511EF9E00C9C1F7 /* CGSizeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D49C922511EF9E00C9C1F7 /* CGSizeExtensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +33,6 @@
 		77D49C82251154EB00C9C1F7 /* MediaItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemCell.swift; sourceTree = "<group>"; };
 		77D49C842511586A00C9C1F7 /* VideoCompositionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCompositionViewModel.swift; sourceTree = "<group>"; };
 		77D49C872511624E00C9C1F7 /* AVFoundationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVFoundationExtensions.swift; sourceTree = "<group>"; };
-		77D49C892511645C00C9C1F7 /* PiPVideoComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiPVideoComposer.swift; sourceTree = "<group>"; };
 		77D49C922511EF9E00C9C1F7 /* CGSizeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				77D49C7F2510E68400C9C1F7 /* VideoComposer.swift */,
-				77D49C892511645C00C9C1F7 /* PiPVideoComposer.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -214,7 +211,6 @@
 			files = (
 				77D49C932511EF9E00C9C1F7 /* CGSizeExtensions.swift in Sources */,
 				77D49C83251154EB00C9C1F7 /* MediaItemCell.swift in Sources */,
-				77D49C8A2511645C00C9C1F7 /* PiPVideoComposer.swift in Sources */,
 				77D49C882511624E00C9C1F7 /* AVFoundationExtensions.swift in Sources */,
 				77D49C78251012CB00C9C1F7 /* MediaPickerController.swift in Sources */,
 				77D49C67251012A400C9C1F7 /* VideoCompositionController.swift in Sources */,
